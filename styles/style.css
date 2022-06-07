@@ -30,6 +30,7 @@ html {
     background: url(../images/bg-pattern-intro-mobile.svg) -350px -300px, linear-gradient(180deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
     height: 95vh;
     border-bottom-left-radius: 100px;
+    margin-bottom: 70px;
 }
 .navbar{
     height: 150px;
@@ -79,7 +80,7 @@ html {
 #nav__checkbox:checked ~ label.nav__toggle .menu {
     display: none;
 }
-/*heo*/
+/*hero*/
 .hero{
     display: flex;
     flex-direction: column;
@@ -121,6 +122,85 @@ html {
     border: 1px solid var(--white);
     color: var(--white);
     background-color: transparent;
+}
+
+/*Section 1 Intro*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--veryDarkBlue);
+    margin-bottom: 230px;
+}
+.intro-title, .content-title{
+    font-size: 26px;
+    margin: 40px 0 20px 0;
+    font-family: var(--fontOverpass);
+    font-weight: 600;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.content-paragraph{
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--darkGrayishBlue);
+}
+
+/*Section 2 State of Art*/
+
+.state-img{
+    width: 100%;
+    position: absolute;
+    top: 1675px;
+}
+.state-content{
+    background: rgb(44,45,63);
+    background: url(../images/bg-pattern-circles.svg) center -210px/600px 600px no-repeat, linear-gradient(90deg, rgba(44,45,63,1) 0%, rgba(63,65,100,1) 100%); 
+    color: var(--white);
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 600px;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.state-title{
+    font-family: var(--fontOverpass);
+    font-weight: 600;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.state-paragraph{
+    line-height: 1.5;
+    width: 80%;
+}
+
+/*features*/
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/*footer*/
+.footer{
+    background-color: var(--darkBlackBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    padding: 50px 0;
+    border-top-right-radius: 90px;
+    color: var(--white);
 }
 
 

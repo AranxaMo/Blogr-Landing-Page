@@ -19,8 +19,16 @@
 
       <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
       <label for="nav__checkbox" class="nav__toggle">
-        <svg class="menu" width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
-        <svg class="close" width="26" height="26" xmlns="http://www.w3.org/2000/svg"><path d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z" fill="#FFF" fill-rule="evenodd"/></svg>
+        <svg class="menu" width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+          </g>
+        </svg>
+        <svg class="close" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z"
+            fill="#FFF" fill-rule="evenodd" />
+        </svg>
       </label>
       <div class="navbar-content">
         <ul class="menu">
@@ -73,6 +81,7 @@
   <main>
     <section class="intro">
       <h2 class="intro-title">Designed for the future</h2>
+      <img src="./images/illustration-editor-mobile.svg" alt="Editor Mobile" class="intro-img">
       <div class="content-container">
         <h3 class="content-title">Introducing an extensible editor</h3>
         <p class="content-paragraph">
@@ -90,14 +99,18 @@
     </section>
 
     <section class="state">
-      <h2 class="state-title">State of the Art Infrastructure</h2>
-      <p class="state-paragraph">
-        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-      </p>
+      <img src="./images/illustration-phones.svg" alt="Blogr phones" class="state-img">
+      <div class="state-content">
+        <h2 class="state-title">State of the Art Infrastructure</h2>
+        <p class="state-paragraph">
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
     </section>
 
     <section class="features">
+      <img src="./images/illustration-laptop-mobile.svg" alt="Laptop" class="features-img">
       <div class="content-container">
         <h3 class="content-title">Free, open, simple</h3>
         <p class="content-paragraph">
@@ -112,47 +125,48 @@
         </p>
       </div>
     </section>
-
-    <footer class="footer">
-      <a href="#">
-        <img src="./images/logo.svg" alt="logo blogr" class="navbar__logo">
-      </a>
-      <section class="product">
-        <h4 class="footer-title">Product</h4>
-        <ul class="footer-menu">
-          <li class="options-list">Overview</li>
-          <li class="options-list">Pricing</li>
-          <li class="options-list">Marketplace</li>
-          <li class="options-list">Features</li>
-          <li class="options-list">Integrations</li>
-        </ul>
-      </section>
-
-      <section class="company">
-        <h4 class="footer-title">Company</h4>
-        <ul class="footer-menu">
-          <li class="options-list">About</li>
-          <li class="options-list">Team</li>
-          <li class="options-list">Blog</li>
-          <li class="options-list">Careers</li>
-        </ul>
-      </section>
-      
-      <section class="connect">
-        <h4 class="footer-title">Connect</h4>
-        <ul class="footer-menu">
-          <li class="options-list">Contact</li>
-          <li class="options-list">Newsletter</li>
-          <li class="options-list">LinkedIn</li>
-        </ul>
-      </section>
-    </footer>
   </main>
+  <footer class="footer">
+    <a href="#">
+      <img src="./images/logo.svg" alt="logo blogr" class="navbar__logo">
+    </a>
+    <section class="product">
+      <h4 class="footer-title">Product</h4>
+      <ul class="footer-menu">
+        <li class="options-list">Overview</li>
+        <li class="options-list">Pricing</li>
+        <li class="options-list">Marketplace</li>
+        <li class="options-list">Features</li>
+        <li class="options-list">Integrations</li>
+      </ul>
+    </section>
 
+    <section class="company">
+      <h4 class="footer-title">Company</h4>
+      <ul class="footer-menu">
+        <li class="options-list">About</li>
+        <li class="options-list">Team</li>
+        <li class="options-list">Blog</li>
+        <li class="options-list">Careers</li>
+      </ul>
+    </section>
+
+    <section class="connect">
+      <h4 class="footer-title">Connect</h4>
+      <ul class="footer-menu">
+        <li class="options-list">Contact</li>
+        <li class="options-list">Newsletter</li>
+        <li class="options-list">LinkedIn</li>
+      </ul>
+    </section>
+
+  </footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/AranxaMo" target="_blank">Aranxa Mo.</a>.
   </div>
+
+
 </body>
 
 </html>
