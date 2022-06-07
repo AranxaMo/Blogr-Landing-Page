@@ -190,7 +190,6 @@ html {
     text-align: center;
     margin-top: 60px;
 }
-
 /*footer*/
 .footer{
     background-color: var(--darkBlackBlue);
@@ -202,6 +201,24 @@ html {
     border-top-right-radius: 90px;
     color: var(--white);
 }
+.section-footer{
+    margin-top: 35px;
+    text-align: center;
+}
+.footer-title{
+    font-family: var(--fontUbuntu);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.options-list{
+    list-style: none;
+    line-height: 2;
+    color: var(--grayishBlue);
+    font-weight: 300;
+}
 
+.attribution{
+    background-color: var(--grayishBlue);
+}
 
   
