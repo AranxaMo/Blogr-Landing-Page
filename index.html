@@ -4,10 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Frontend Mentor | [Blogr]</title>
 
 </head>
@@ -18,10 +16,16 @@
       <a href="#">
         <img src="./images/logo.svg" alt="logo blogr" class="navbar__logo">
       </a>
+
+      <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+      <label for="nav__checkbox" class="nav__toggle">
+        <svg class="menu" width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+        <svg class="close" width="26" height="26" xmlns="http://www.w3.org/2000/svg"><path d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z" fill="#FFF" fill-rule="evenodd"/></svg>
+      </label>
       <div class="navbar-content">
         <ul class="menu">
           <li class="menu__item">Product</li>
-          <div class="submenu">
+          <!-- <div class="submenu">
             <ul>
               <li class="submenu__item">Overview</li>
               <li class="submenu__item">Pricing</li>
@@ -29,30 +33,30 @@
               <li class="submenu__item">Features</li>
               <li class="submenu__item">Integrations</li>
             </ul>
-          </div>
+          </div> -->
           <li class="menu__item">Company</li>
-          <div class="submenu">
+          <!-- <div class="submenu">
             <ul>
               <li class="submenu__item">About</li>
               <li class="submenu__item">Team</li>
               <li class="submenu__item">Blog</li>
               <li class="submenu__item">Careers</li>
             </ul>
-          </div>
+          </div> -->
           <li class="menu__item">Connect</li>
-          <div class="submenu">
+          <!-- <div class="submenu">
             <ul>
               <li class="submenu__item">Contact</li>
               <li class="submenu__item">Newsletter</li>
               <li class="submenu__item">LinkedIn</li>
             </ul>
-          </div>
+          </div> -->
         </ul>
-      </div>
 
-      <div class="button-container">
-        <a href="#" class="btn btn--transparent">Login</a>
-        <a href="#" class="btn btn--white">Sign Up</a>
+        <div class="signup-container">
+          <a href="#" class="btn btn--login">Login</a>
+          <a href="#" class="btn btn--signup">Sign Up</a>
+        </div>
       </div>
     </nav>
 
