@@ -23,12 +23,13 @@ html {
     padding: 0;
     font-family: var(--fontOverpass);
     font-weight: 300;
+    line-height: 1.5;
 }
 /*Nav*/
 .header{
     background: rgb(255,143,112); 
-    background: url(../images/bg-pattern-intro-mobile.svg) -350px -300px, linear-gradient(180deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
-    height: 95vh;
+    background: url(../images/bg-pattern-intro-mobile.svg) -300px -250px, linear-gradient(180deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+    height: 110vh;
     border-bottom-left-radius: 100px;
     margin-bottom: 70px;
 }
@@ -40,6 +41,7 @@ html {
 .navbar__logo{
     position: relative;
     left: 25px;
+    width: 75%;
 }
 .nav__checkbox{
     display: none;
@@ -55,21 +57,44 @@ html {
 .navbar-content {
     display: none;
     list-style-type: none;
+    background-color: var(--white);
+    width: 90%;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.menu__item{
+    margin: 20px 0;
+    color: var(--darkBlackBlue);
+    font-weight: 600;
 }
 #nav__checkbox:checked ~ .navbar-content {
     display: block;
     position: absolute;
-    top: 120px;
+    top: 100px;
     margin: auto;
     left: 0;
     right: 0;
-    background-color: var(--white);
-    width: 90%;
-    text-align: center;
 }
 .signup-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.button{
+    font-weight: 600;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    width: 40%;
+    border-radius: 50px;
+}
+.btn--login{
+    color: var(--darkGrayishBlue);
+}
+.btn--signup{
+    background: linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+    color: var(--white);
 }
 .navbar-content li{
     list-style: none;
@@ -90,17 +115,16 @@ html {
     color: var(--white);
 }
 .hero-title{
-    font-family: var(--fontUbuntu);
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: 600;
+    font-size: 34px;
     text-align: center;
-    width: 80%;
+    width: 85%;
+    padding-top: 50px;
     margin-bottom: 10px;
 }
 
 .hero-paragraph{
-    color: hsl(240, 2%, 79%);
-    width: 90%;
+    width: 85%;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -130,14 +154,13 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: var(--veryDarkBlue);
-    margin-bottom: 230px;
+    margin-bottom: 165px;
 }
 .intro-title, .content-title{
-    font-size: 26px;
-    margin: 40px 0 20px 0;
-    font-family: var(--fontOverpass);
+    font-size: 28px;
+    margin: 40px 0 40px 0;
     font-weight: 600;
+    color: var(--veryDarkBlue);
 }
 .content-container{
     display: flex;
@@ -145,25 +168,32 @@ html {
     width: 80%;
 }
 .content-paragraph{
-    line-height: 1.5;
     font-weight: 500;
     color: var(--darkGrayishBlue);
 }
+.intro-img{
+    width: 100%;
+    height: 325px;
+    background: url(../images/illustration-editor-mobile.svg) center center no-repeat;
+}
 
 /*Section 2 State of Art*/
-
+.img-container{
+    height: 100px;
+    position: relative;
+}
 .state-img{
     width: 100%;
     position: absolute;
-    top: 1675px;
+    top: -90px;
 }
 .state-content{
     background: rgb(44,45,63);
     background: url(../images/bg-pattern-circles.svg) center -210px/600px 600px no-repeat, linear-gradient(90deg, rgba(44,45,63,1) 0%, rgba(63,65,100,1) 100%); 
     color: var(--white);
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    height: 600px;
+    border-bottom-left-radius: 120px;
+    border-top-right-radius: 120px;
+    height: 620px;
     padding-top: 150px;
     display: flex;
     align-items: center;
@@ -178,7 +208,6 @@ html {
     margin-bottom: 20px;
 }
 .state-paragraph{
-    line-height: 1.5;
     width: 80%;
 }
 
@@ -188,7 +217,12 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 80px;
+}
+.features-img{
+    width: 100%;
+    height: 325px;
+    background: url(../images/illustration-laptop-mobile.svg) center center no-repeat;
 }
 /*footer*/
 .footer{
@@ -198,8 +232,12 @@ html {
     align-items: center;
     margin-top: 60px;
     padding: 50px 0;
-    border-top-right-radius: 90px;
+    border-top-right-radius: 110px;
     color: var(--white);
+}
+.footer__logo{
+    margin-top: 25px;
+    margin-bottom: 45px;
 }
 .section-footer{
     margin-top: 35px;
@@ -218,7 +256,8 @@ html {
 }
 
 .attribution{
-    background-color: var(--grayishBlue);
+    background-color: var(--darkBlackBlue);
+    color: var(--white);
 }
 
   
