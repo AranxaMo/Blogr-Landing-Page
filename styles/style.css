@@ -22,7 +22,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: var(--fontOverpass);
-    font-weight: 300;
+    font-weight: 600;
     line-height: 1.5;
 }
 /*Nav*/
@@ -67,6 +67,10 @@ html {
     margin: 20px 0;
     color: var(--darkBlackBlue);
     font-weight: 600;
+    display: inline-block;
+}
+.menu li{
+    cursor: pointer;
 }
 #nav__checkbox:checked ~ .navbar-content {
     display: block;
@@ -104,6 +108,47 @@ html {
 }
 #nav__checkbox:checked ~ label.nav__toggle .menu {
     display: none;
+}
+/*Toggle Menu*/
+.item-icon{
+    width: 10px;
+    height: 10px;
+    background: url(../images/icon-arrow-dark.svg) center center no-repeat;
+    display: inline-block;
+}
+.submenu{
+    position: relative;
+    background: var(--grayishBlue);
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    color: var(--darkGrayishBlue);
+    padding: 20px 0;
+}
+.menu-option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.select-clicked{
+    color: var(--lightRed);
+}
+.item-icon__rotate{
+    transform: rotate(180deg);
+}
+.submenu__item{
+    margin: 15px 0;
+}
+.submenu__item:hover, .active{
+    font-weight: 600;
+}
+.menu-open{
+    display: block;
+    opacity: 1;
 }
 /*hero*/
 .hero{
@@ -212,6 +257,7 @@ html {
 }
 .state-paragraph{
     width: 80%;
+    font-weight: 300;
 }
 
 /*features*/
@@ -272,12 +318,11 @@ html {
     }
     .header{
         background: url(../images/bg-pattern-intro-desktop.svg) -400px center no-repeat, linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
-        height: 75vh;
+        height: 85vh;
         margin-bottom: 60px;
     }
     .navbar{
         padding: 0 130px;
-        display: flex;
         justify-content: space-between;
     }
     .navbar__logo{
@@ -304,9 +349,6 @@ html {
         display: none;
     }
     .menu__item{
-        margin-left: 30px;
-        margin-right: 10px;
-        font-family: var(--fontUbuntu);
         color: var(--white);
     }
     .button{
@@ -319,6 +361,29 @@ html {
     .btn--signup{
         background: var(--white);
         color: var(--lightRed);
+    }
+    /*TOGGLE MENU*/
+    .item-icon{
+        width: 10px;
+        height: 10px;
+        background: url(../images/icon-arrow-light.svg) center center no-repeat;
+        display: inline-block;
+        margin-right: 50px;
+    }
+    .menu{
+        position: relative;
+    }
+    .submenu{
+        position: absolute;
+        top: 50px;
+        background: var(--white);
+        text-align: left;
+        box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+        width: 30%;
+        padding: 10px 15px;
+    }
+    .submenu__item{
+        margin: 5px 0;
     }
     /*HERO*/
     .hero-title{
@@ -411,4 +476,3 @@ html {
     }
 }
 
-  
