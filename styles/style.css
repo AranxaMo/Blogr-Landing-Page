@@ -22,7 +22,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: var(--fontOverpass);
-    font-weight: 600;
+    font-weight: 300;
     line-height: 1.5;
 }
 /*Nav*/
@@ -65,9 +65,11 @@ html {
 }
 .menu__item{
     margin: 20px 0;
-    color: var(--darkBlackBlue);
-    font-weight: 600;
     display: inline-block;
+    font-weight: 600;
+}
+.menu__item:hover{
+    text-decoration: underline;
 }
 .menu li{
     cursor: pointer;
@@ -100,6 +102,17 @@ html {
     background: linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
     color: var(--white);
 }
+.btn--login:hover{
+    color: var(--veryDarkBlue);
+}
+.btn--signup:hover, .btn--white:hover{
+    background: rgba(200, 200, 202, 0.3);
+    color: var(--white);
+}
+.btn--transparent:hover{
+    color: var(--veryLightRed);
+    background: var(--white);
+}
 .navbar-content li{
     list-style: none;
 }
@@ -126,7 +139,7 @@ html {
     display: none;
     transition: 0.2s;
     z-index: 1;
-    color: var(--darkGrayishBlue);
+    color: var(--darkBlackBlue);
     padding: 20px 0;
 }
 .menu-option{
@@ -134,14 +147,14 @@ html {
     flex-direction: column;
     align-items: center;
 }
-.select-clicked{
-    color: var(--lightRed);
-}
+
 .item-icon__rotate{
     transform: rotate(180deg);
 }
 .submenu__item{
-    margin: 15px 0;
+    font-size: 16px;
+    margin: 20px 0;
+    font-family: var(--fontUbuntu)
 }
 .submenu__item:hover, .active{
     font-weight: 600;
@@ -150,6 +163,10 @@ html {
     display: block;
     opacity: 1;
 }
+.select-clicked{
+    color: var(--darkGrayishBlue);
+}
+
 /*hero*/
 .hero{
     display: flex;
@@ -303,7 +320,10 @@ html {
     color: var(--grayishBlue);
     font-weight: 300;
 }
-
+.options-list:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .attribution{
     background-color: var(--darkBlackBlue);
     color: var(--white);
@@ -345,6 +365,9 @@ html {
     .menu{
         display: flex;
     }
+    .menu-option{
+        align-items: flex-start;
+    }
     .nav__toggle {
         display: none;
     }
@@ -385,6 +408,7 @@ html {
     .submenu__item{
         margin: 5px 0;
     }
+    
     /*HERO*/
     .hero-title{
         font-size: 60px;
